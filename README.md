@@ -1,4 +1,7 @@
 ## ⚠️Usen la herramienta con la Autorizacion o en entornos seguros⚠️
+
+![Warning-12-12-2024](https://github.com/user-attachments/assets/fb0a667a-75b1-449e-b56a-e4639aba4e5a)
+
 ### 🚀 Getting Started with NDiscover by MatthyGD
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
