@@ -76,9 +76,15 @@ sudo ./NDiscover.sh
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-✅ :
+✅ Escaneo de Puertos (IPv4 o Ipv6) via TCP, UDP y SCTP:
 
+![Puertos 1](https://github.com/user-attachments/assets/cd44eac4-4084-4a58-9d40-360d149e5175)
 
+![Puertos 2](https://github.com/user-attachments/assets/92bdc3e1-a313-4105-a0ac-5a6909dc136e)
+
+![Puertos 3](https://github.com/user-attachments/assets/dd7ffec6-99b8-4bcd-9d5a-713d079a955c)
+
+![Puertos 4](https://github.com/user-attachments/assets/44b8b27b-1a56-4f56-94fd-aeb20b35232a)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
