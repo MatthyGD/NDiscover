@@ -23,7 +23,7 @@ git clone https://github.com/MatthyGD/NDiscover.git
 🔴 Entramos dentro del repositorio
 
 ```bash
-cd NDdiscover
+cd NDiscover/
 ```
 
 🔴 Garantizamos permisos de Ejecuccion
