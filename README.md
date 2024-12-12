@@ -5,7 +5,7 @@
 
 ![WARNING-12-12-2024 (1)](https://github.com/user-attachments/assets/148e670a-8284-47b0-9080-e8fbd738d85b)
 
-## 🔍️ Comienza con a Auditar con NDiscover 
+## 🔍️ Comienza a Auditar con NDiscover 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
