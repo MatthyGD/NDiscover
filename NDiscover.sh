@@ -31,7 +31,7 @@ DUDE="❓"
 help_menu() {
   # Menú de ayuda profesional
   echo -e "\n${CYAN}====================== ${WARNING} Asistencia para el uso de NDiscover ${WARNING} ======================${RESET}\n"
-  echo -e "\n${YELLOW} ¡Saludos! Soy Matt, Analista de Ciberseguridad especializado en Hacking etico.${RESET}"
+  echo -e "\n${YELLOW} ¡Saludos! Soy Matt, Analista de Ciberseguridad especializado en Hacking Ético.${RESET}"
   echo -e "\n${YELLOW} NDiscover es una herramienta avanzada que permite realizar escaneos de Hosts activos y puertos abiertos, además de generar documentación detallada sobre los hallazgos en HTML para visualizarla mediante un navegador web.${RESET}"
   echo -e "\n${YELLOW} Se recomienda seguir el flujo sugerido por la herramienta (Instalacion de dependencias, Descubrimiento de Hosts, Escaneo con Nmap, Creación de directorios y servidor en Python) para una experiencia óptima y completa.${RESET}"
   echo -e "\n${YELLOW} Es importante destacar que, gracias a los múltiples protocolos utilizados durante los descubrimientos, se puede obtener información precisa tanto de la red local como de los puertos disponibles sin preocuparnos de nada.${RESET}"
