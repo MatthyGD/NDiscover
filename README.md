@@ -1,8 +1,8 @@
-🚀 Getting Started with RsaUserReveal by MatthyGD
+🚀 Getting Started with NDiscover by MatthyGD
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-🌐 RsaUserReveal 🌐
+🌐 NDiscover 🌐
 NDiscover es una herramienta que automatiza:
 
 👉 Descubrimiento de interfaces de redes
