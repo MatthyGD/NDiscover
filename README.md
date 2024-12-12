@@ -9,7 +9,7 @@ NDiscover es una herramienta que automatiza:
 #### ⭐ Descubrimiento de interfaces de redes
 #### ⭐ Descubrimiento de Direcciones privadas IPv4 e IPv6 mediante los protocolos: ARP y SCTP
 #### ⭐ Escaneo automatico de puertos abiertos tanto IPv4 e IPv6 mediante los protocolos: TCP, UDP y SCTP junto con documentacion web
-#### ⭐ Automatizacion de Carpetas de trabajo y servidor en Python para ver la documentacion HTML del escaneo de puertos
+#### ⭐ Automatizacion de Carpetas de trabajo y servidor en Python para ver analisis de servicios via HTML del escaneo de puertos
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -78,7 +78,7 @@ sudo ./NDiscover.sh
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-✅ Creando Carpetas de trabajo extra + Servidor en Python para documentacion web:
+✅ Creando Carpetas de trabajo extra + Servidor en Python para ver el analisis de puertos via web:
 
 ![Extra 1](https://github.com/user-attachments/assets/f09b5cc8-4174-40ef-af18-7e1bde34006f)
 
