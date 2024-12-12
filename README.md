@@ -1,3 +1,7 @@
+# ⚠️Usen la herramienta con Autorizacion o dentro de entornos seguros⚠️
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # 🚀 Getting Started with NDiscover by MatthyGD
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -87,7 +91,5 @@ sudo ./NDiscover.sh
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-# ⚠️Usen la herramienta con Autorizacion o dentro de entornos seguros⚠️
 
 #### ❤️Hasta aqui todo! NDiscover es mi primer proyecto, estoy emocionado de compartirlo con ustedes, espero que podais sacarle partido en vuestras investigaciones!❤️ 
