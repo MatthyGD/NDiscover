@@ -35,13 +35,14 @@ chmod +x NDiscover.sh
 🔴 Desplegamos la herramienta como usuario privilegiado
 
 ```bash
-sudo ./RsaUserReveal.sh
+sudo ./NDiscover.sh
 ```
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-✅ :
+✅ Menu de Ayuda introductorio:
 
+![Captura de pantalla 2024-12-12 020056](https://github.com/user-attachments/assets/499deb9f-58e0-4f36-99ea-61cd8130476d)
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
