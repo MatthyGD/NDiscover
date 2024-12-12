@@ -65,6 +65,8 @@ sudo ./NDiscover.sh
 
 ✅ 2 -> Requisitos para usar la Herramienta y Automatización de descarga:
 
+![Herramientas2](https://github.com/user-attachments/assets/f7240853-3197-4703-947f-393e472af7b2)
+
 ![Requisitos](https://github.com/user-attachments/assets/8c2e3d37-63e0-4e02-8a10-3f6724efefa3)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
