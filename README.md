@@ -6,10 +6,9 @@
 ### 👮 Esta herramienta solo se debe emplear con fines eticos o de investigacion
 ### 👮 No recomendamos su uso en zonas no autorizadas
 
-
-## 🔍️ Comienza a Auditar con NDiscover 
-
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# 🔍️ Comienza a Auditar con NDiscover 
 
 ![NDISCOVER-12-12-2024 (2)](https://github.com/user-attachments/assets/28071e81-e50b-4595-b2dc-394d6518b119)
 
