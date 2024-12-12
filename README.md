@@ -2,13 +2,13 @@
 
 ![WARNING-12-12-2024 (1)](https://github.com/user-attachments/assets/148e670a-8284-47b0-9080-e8fbd738d85b)
 
-======================================================================
+========================================================================
 
-### 👮 Usa la herramienta con Autorización o en entornos seguros
-### 👮 Esta herramienta solo se debe emplear con fines eticos o de investigacion
+### 👮 Usa la herramienta con Autorización o en Entornos Seguros
+### 👮 Esta herramienta solo se debe emplear con fines Éticos o de Investigación
 ### 👮 No recomendamos su uso en zonas no autorizadas
 
-======================================================================
+========================================================================
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -23,8 +23,8 @@ NDiscover es una herramienta que automatiza:
 
 #### ⭐ Descubrimiento de interfaces de redes
 #### ⭐ Descubrimiento de Direcciones privadas IPv4 e IPv6 mediante los protocolos: ARP y SCTP
-#### ⭐ Escaneo automatico de puertos abiertos tanto IPv4 e IPv6 mediante los protocolos: TCP, UDP y SCTP junto con documentacion web
-#### ⭐ Automatizacion de Carpetas de trabajo y servidor en Python para ver analisis de servicios via HTML del escaneo de puertos
+#### ⭐ Escaneo automatico de puertos abiertos tanto IPv4 e IPv6 mediante los protocolos: TCP, UDP y SCTP junto con documentación web
+#### ⭐ Automatización de Carpetas de trabajo y servidor en Python para ver análisis de servicios vía HTML del escaneo de puertos
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -42,7 +42,7 @@ git clone https://github.com/MatthyGD/NDiscover.git
 cd NDiscover/
 ```
 
-🔴 Garantizamos permisos de Ejecuccion
+🔴 Garantizamos permisos de Ejecucción
 
 ```bash
 chmod +x NDiscover.sh
@@ -63,7 +63,7 @@ sudo ./NDiscover.sh
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-✅ Requisitos para usar la Herramienta y Automatizacion de descarga:
+✅ Requisitos para usar la Herramienta y Automatización de descarga:
 
 ![Requisitos](https://github.com/user-attachments/assets/8c2e3d37-63e0-4e02-8a10-3f6724efefa3)
 
@@ -75,13 +75,13 @@ sudo ./NDiscover.sh
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-✅ Descubrimientos de Hosts via ARP, ICMP e IPV6 con automatizacion en el Subnetting (Clase C):
+✅ Descubrimiento de Hosts vía ARP, ICMP e IPV6 con automatización en el Subnetting (Clase C):
 
 ![Hosts](https://github.com/user-attachments/assets/70ea4c57-cc66-4fcd-bbdc-79b97adfe2dc)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-✅ Escaneo de Puertos (IPv4 o Ipv6) via TCP, UDP y SCTP:
+✅ Escaneo de Puertos (IPv4 o Ipv6) vía TCP, UDP y SCTP:
 
 ![Puertos 1](https://github.com/user-attachments/assets/cd44eac4-4084-4a58-9d40-360d149e5175)
 
@@ -93,7 +93,7 @@ sudo ./NDiscover.sh
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-✅ Creando Carpetas de trabajo extra + Servidor en Python para ver el analisis de servicios via web:
+✅ Creando Carpetas de trabajo extra + Servidor en Python para ver el análisis de servicios vía web:
 
 ![Extra 1](https://github.com/user-attachments/assets/f09b5cc8-4174-40ef-af18-7e1bde34006f)
 
@@ -105,4 +105,4 @@ sudo ./NDiscover.sh
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # ❤️ Hasta aqui todo! 
-### NDiscover es mi primer proyecto, estoy emocionado de compartirlo con ustedes, espero que podais sacarle partido en vuestras investigaciones!
+### 😊 NDiscover es mi primer proyecto, estoy emocionado de compartirlo con ustedes, espero que podais sacarle partido en vuestras investigaciones!
