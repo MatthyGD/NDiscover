@@ -78,7 +78,7 @@ sudo ./NDiscover.sh
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-✅ Creando Carpetas de trabajo extra + Servidor en Python para ver el analisis de puertos via web:
+✅ Creando Carpetas de trabajo extra + Servidor en Python para ver el analisis de servicios via web:
 
 ![Extra 1](https://github.com/user-attachments/assets/f09b5cc8-4174-40ef-af18-7e1bde34006f)
 
