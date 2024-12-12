@@ -5,8 +5,7 @@
 ### 👮 Usa la herramienta con Autorizacion o en entornos seguros
 ### 👮 Esta herramienta solo se debe emplear con fines eticos o de investigacion
 ### 👮 No recomendamos su uso en zonas no autorizadas
-#
-
+\n
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 🔍️ Comienza a Auditar con NDiscover 
