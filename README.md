@@ -3,13 +3,13 @@
 #### 👮 Esta herramienta solo se debe emplear con fines eticos o de investigacion
 #### 👮 No recomendamos su uso en zonas no autorizadas
 
-![logo-removebg-preview](https://github.com/user-attachments/assets/6011646e-e62b-422c-9661-5f390b26a630)
+![WARNING-12-12-2024 (1)](https://github.com/user-attachments/assets/148e670a-8284-47b0-9080-e8fbd738d85b)
 
 ### 🚀 Getting Started with NDiscover by MatthyGD
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-![NDISCOVER-12-12-2024 (1)](https://github.com/user-attachments/assets/a0a60dfe-57cd-4b5b-8434-5048f1a9c8d1)
+![NDISCOVER-12-12-2024 (2)](https://github.com/user-attachments/assets/28071e81-e50b-4595-b2dc-394d6518b119)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
