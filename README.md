@@ -14,7 +14,7 @@ NDiscover es una herramienta que automatiza:
 
 Para usar la herramienta seguiremos los siguientes comandos:
 
-🔴 Clone the Repository
+🔴 Clonamos el repositorio
 
 ```bash
 git clone https://github.com/MatthyGD/NDiscover.git
