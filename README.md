@@ -56,7 +56,7 @@ sudo ./NDiscover.sh
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-✅ 1 -> Menu de Ayuda introductorio:
+✅ 1 -> Menu de Ayuda para Asistencia de la herramienta:
 
 
 ![Ayuda](https://github.com/user-attachments/assets/4fe40482-ea04-4284-89f0-d2c40f6e66f8)
