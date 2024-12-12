@@ -33,7 +33,7 @@ help_menu() {
   echo -e "\n${CYAN}====================== ${WARNING} Asistencia para el uso de NDiscover ${WARNING} ======================${RESET}\n"
   echo -e "\n${YELLOW} ¡Saludos! Soy Matt, especialista en Ciberseguridad.${RESET}"
   echo -e "\n${YELLOW} NDiscover es una herramienta avanzada que permite realizar escaneos de Hosts activos y puertos abiertos, además de generar documentación detallada sobre los hallazgos en HTML para visualizarla mediante un navegador web.${RESET}"
-  echo -e "\n${YELLOW} Se recomienda seguir el flujo sugerido por la herramienta (Instalacion de dependencias, Descubrimiento de Hosts, Escaneo con Nmap de servicios y creación de directorios y servidor en Python) para una experiencia óptima.${RESET}"
+  echo -e "\n${YELLOW} Se recomienda seguir el flujo sugerido por la herramienta (Instalacion de dependencias, Descubrimiento de Hosts, Escaneo con Nmap, Creación de directorios y servidor en Python) para una experiencia óptima y completa.${RESET}"
   echo -e "\n${YELLOW} Es importante destacar que, gracias a los múltiples protocolos utilizados durante los descubrimientos, se puede obtener información precisa tanto de la red local como de los puertos disponibles sin preocuparnos de nada.${RESET}"
   echo -e "\n${YELLOW} Si consideras útil esta herramienta, puedes brindarme tu apoyo en GitHub.${RESET}"
   echo -e "\n${YELLOW} ¡Gracias por utilizar NDiscover!${RESET}"
@@ -296,7 +296,7 @@ main_menu() {
     clear
     echo -e "${CYAN}====================== Menú Principal ======================${RESET}"
     echo -e "${YELLOW}1.${RESET} Menu de ayuda ${DUDE}"
-    echo -e "${YELLOW}2.${RESET} Comprobar requisitos ${SCANNER}"
+    echo -e "${YELLOW}2.${RESET} Instalar Dependencias ${SCANNER}"
     echo -e "${BLUE}3.${RESET} Obtener las interfaces de Red ${NETWORK}"
     echo -e "${BLUE}4.${RESET} Escanear Host (ARP, ICMP, IPv6) ${NETWORK}"
     echo -e "${MAGENTA}5.${RESET} Nmap IPv4 (TCP, UDP, SCTP) ${COMPUTER}"
