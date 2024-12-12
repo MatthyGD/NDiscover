@@ -5,8 +5,8 @@
 ========================================================================
 
 ### 👮 Usa la herramienta con Autorización o en Entornos Seguros
-### 👮 Esta herramienta solo se debe emplear con fines Éticos o de Investigación
-### 👮 No recomendamos su uso en zonas no autorizadas
+ 👮 Esta herramienta solo se debe emplear con fines Éticos o de Investigación
+ 👮 No recomendamos su uso en zonas no autorizadas
 
 ========================================================================
 
