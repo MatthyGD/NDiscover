@@ -1,5 +1,8 @@
 ## ⚠️Usen la herramienta con la Autorizacion o en entornos seguros⚠️
 
+##### Esta herramienta solo se debe emplear con fines eticos o de investigacion
+##### No recomendamos su uso en zonas no autorizadas
+
 ![WARNING-12-12-2024 (1)](https://github.com/user-attachments/assets/59fef353-7791-4f6a-b162-3f75bfccd93f)
 
 ### 🚀 Getting Started with NDiscover by MatthyGD
