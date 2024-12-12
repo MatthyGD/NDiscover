@@ -1,5 +1,6 @@
-# ⚠️Usa la herramienta con Autorizacion o en entornos seguros⚠️
+# ⚠️Precaucion⚠️
 
+### 👮 Usa la herramienta con Autorizacion o en entornos seguros
 ### 👮 Esta herramienta solo se debe emplear con fines eticos o de investigacion
 ### 👮 No recomendamos su uso en zonas no autorizadas
 
