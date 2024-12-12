@@ -1,10 +1,10 @@
-# ⚠️Precaucion⚠️
+# ⚠️Precaución
 
 ![WARNING-12-12-2024 (1)](https://github.com/user-attachments/assets/148e670a-8284-47b0-9080-e8fbd738d85b)
 
 ======================================================================
 
-### 👮 Usa la herramienta con Autorizacion o en entornos seguros
+### 👮 Usa la herramienta con Autorización o en entornos seguros
 ### 👮 Esta herramienta solo se debe emplear con fines eticos o de investigacion
 ### 👮 No recomendamos su uso en zonas no autorizadas
 
