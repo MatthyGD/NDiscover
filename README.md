@@ -19,7 +19,7 @@
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 🌐 NDiscover 🌐
-NDiscover es una herramienta que automatiza:
+NDiscover (NetDiscover) es una herramienta que automatiza:
 
 #### ⭐ Descubrimiento de interfaces de redes
 #### ⭐ Descubrimiento de Direcciones privadas IPv4 e IPv6 mediante los protocolos: ARP y SCTP
