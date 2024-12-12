@@ -3,7 +3,7 @@
 #### 👮 Esta herramienta solo se debe emplear con fines eticos o de investigacion
 #### 👮 No recomendamos su uso en zonas no autorizadas
 
-![logo](https://github.com/user-attachments/assets/7e8c48db-a836-4eee-b6bc-388367e1aee0)
+![logo-removebg-preview](https://github.com/user-attachments/assets/6011646e-e62b-422c-9661-5f390b26a630)
 
 ### 🚀 Getting Started with NDiscover by MatthyGD
 
