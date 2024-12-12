@@ -79,7 +79,7 @@ sudo ./NDiscover.sh
 
 ✅ 4 -> Descubrimiento de Hosts vía ARP, ICMP e IPV6 con automatización en el Subnetting (Clase C):
 
-![Hosts](https://github.com/user-attachments/assets/70ea4c57-cc66-4fcd-bbdc-79b97adfe2dc)
+![Hosts](https://github.com/user-attachments/assets/a3614eef-81e3-4f4d-b843-89a6a64fa3c3)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
