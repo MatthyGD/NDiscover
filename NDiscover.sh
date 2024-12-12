@@ -87,7 +87,7 @@ check_tools() {
 get_interfaces() {
   # Obtenemos las interfaces de Red
   echo -e "\n${CYAN}====================== ${NETWORK} Obteniendo las interfaces de red disponibles ${NETWORK} ======================${RESET}\n"
-  sleep 5
+  sleep 3
   ip a
   # Recordatorio de continuar
   echo -e "\n${YELLOW}${WARNING} El proceso ha finalizado. Presiona Enter para continuar.${RESET}"
@@ -164,7 +164,7 @@ advanced_scan_ipv4() {
 
   # Eliminar archivos XML
   echo -e "\n${RED}${WARNING} Eliminando archivos XML y Obteniendo archivos HTML para Documetacion Web${RESET}\n"
-  sleep 5
+  sleep 3
   rm *xml*
   echo -e "\n${GREEN}${CHECKMARK} Escaneos completados para la IP: ${ip_victima_4}${RESET}"
 
@@ -240,7 +240,7 @@ create_server() {
     1)
       echo -e "\n${YELLOW}Creando carpetas adicionales, espere un momento${RESET}\n"
       mkdir -p "/opt/$directorio_trabajo"/{ftp,ssh,telnet,smtp,http,https,smb,credentials,exploit,content}
-      sleep 5
+      sleep 3
       echo -e "\n${GREEN}Carpetas creadas exitosamente en $directorio_trabajo${RESET}"
       ;;
     2)
@@ -257,7 +257,7 @@ create_server() {
       # Crear directorios y luego iniciar el servidor HTTP
       echo -e "\n${YELLOW}Creando carpetas adicionales, espere un momento${RESET}\n"
       mkdir -p "/opt/$directorio_trabajo"/{ftp,ssh,telnet,smtp,http,https,smb,credentials,exploit,content}
-      sleep 5
+      sleep 3
       echo -e "\n${GREEN}Carpetas creadas exitosamente en $directorio_trabajo${RESET}"
 
       # Solicitar al usuario el puerto para el servidor HTTP
