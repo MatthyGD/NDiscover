@@ -99,4 +99,5 @@ sudo ./NDiscover.sh
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#### ❤️Hasta aqui todo! NDiscover es mi primer proyecto, estoy emocionado de compartirlo con ustedes, espero que podais sacarle partido en vuestras investigaciones!❤️ 
+# ❤️ Hasta aqui todo! 
+### NDiscover es mi primer proyecto, estoy emocionado de compartirlo con ustedes, espero que podais sacarle partido en vuestras investigaciones!
