@@ -1,5 +1,5 @@
-# ⚠️Usen la herramienta con la Autorizacion o en entornos seguros⚠️
-## 🚀 Getting Started with NDiscover by MatthyGD
+## ⚠️Usen la herramienta con la Autorizacion o en entornos seguros⚠️
+### 🚀 Getting Started with NDiscover by MatthyGD
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
