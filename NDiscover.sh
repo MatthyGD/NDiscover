@@ -125,7 +125,7 @@ scan_network() {
 
   # Escaneo IPv6
   echo -e "${MAGENTA}=================================== IPv6 ${COMPUTER} ===================================${RESET}\n"
-  ping6 -c2 -n ff02::1
+  ping6 -c2 -I eth0 ff02::1
   echo -e "\n"
 
   # Recordatorio de continuar
