@@ -307,14 +307,14 @@ main_menu() {
     read opcion
     case $opcion in
       1)
-	      help_menu
+	help_menu
         ;;
       2)
-	      check_tools
+	check_tools
         ;;
       3)
- 	      get_interfaces
-	      ;;
+ 	get_interfaces
+	;;
       4)
         get_network
         ;;
