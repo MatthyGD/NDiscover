@@ -149,17 +149,17 @@ advanced_scan_ipv4() {
 
   # Escaneo TCP
   echo -e "\n${GREEN}=================================== Escaneo TCP ${SCANNER} ===================================${RESET}\n"
-  nmap -p- --open --min-rate=5000 -T5 -A -sT -Pn -n -v $ip_victima_4 -oX nmap_TCP_IPv4.xml
+  nmap -p 1-65535 --open --min-rate=5000 -T5 -A -sT -Pn -n -v $ip_victima_4 -oX nmap_TCP_IPv4.xml
   xsltproc nmap_TCP_IPv4.xml -o nmap_TCP_IPv4.html
 
   # Escaneo UDP
   echo -e "\n${MAGENTA}=================================== Escaneo UDP ${NETWORK} ===================================${RESET}\n"
-  nmap --top-ports=50 --min-rate=5000 -T5 -O --traceroute -sU -Pn -n -v $ip_victima_4 -oX nmap_UDP_IPv4.xml
+  nmap -p 1-65535 --min-rate=5000 -T5 -O --traceroute -sU -Pn -n -v $ip_victima_4 -oX nmap_UDP_IPv4.xml
   xsltproc nmap_UDP_IPv4.xml -o nmap_UDP_IPv4.html
 
   # Escaneo SCTP
   echo -e "\n${BLUE}=================================== Escaneo SCTP ${COMPUTER} ===================================${RESET}\n"
-  nmap -p- --open --min-rate=5000 -T5 -O --traceroute -sY -Pn -n -v $ip_victima_4 -oX nmap_SCTP_IPv4.xml
+  nmap -p 1-65535 --open --min-rate=5000 -T5 -O --traceroute -sY -Pn -n -v $ip_victima_4 -oX nmap_SCTP_IPv4.xml
   xsltproc nmap_SCTP_IPv4.xml -o nmap_SCTP_IPv4.html
 
   # Eliminar archivos XML
@@ -189,17 +189,17 @@ advanced_scan_ipv6() {
 
   # Escaneo TCP
   echo -e "\n${GREEN}=================================== Escaneo TCP ${SCANNER} ===================================${RESET}\n"
-  nmap -6 -p- --open --min-rate=5000 -T5 -A -sT -Pn -n -v $ip_victima_6 -oX nmap_TCP_IPv6.xml
+  nmap -6 -p 1-65535 --open --min-rate=5000 -T5 -A -sT -Pn -n -v $ip_victima_6 -oX nmap_TCP_IPv6.xml
   xsltproc nmap_TCP_IPv6.xml -o nmap_TCP_IPv6.html
 
   # Escaneo UDP
   echo -e "\n${MAGENTA}=================================== Escaneo UDP ${NETWORK} ===================================${RESET}\n"
-  nmap -6 --top-ports=50 --min-rate=5000 -T5 -O --traceroute -sU -Pn -n -v $ip_victima_6 -oX nmap_UDP_IPv6.xml
+  nmap -6 -p 1-65535 --min-rate=5000 -T5 -O --traceroute -sU -Pn -n -v $ip_victima_6 -oX nmap_UDP_IPv6.xml
   xsltproc nmap_UDP_IPv6.xml -o nmap_UDP_IPv6.html
 
   # Escaneo SCTP
   echo -e "\n${BLUE}=================================== Escaneo SCTP ${COMPUTER} ===================================${RESET}\n"
-  nmap -6 -p- --open --min-rate=5000 -T5 -O --traceroute -sY -Pn -n -v $ip_victima_6 -oX nmap_SCTP_IPv6.xml
+  nmap -6 -p 1-65535 --open --min-rate=5000 -T5 -O --traceroute -sY -Pn -n -v $ip_victima_6 -oX nmap_SCTP_IPv6.xml
   xsltproc nmap_SCTP_IPv6.xml -o nmap_SCTP_IPv6.html
 
   # Eliminar archivos XML
