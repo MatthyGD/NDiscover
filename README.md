@@ -22,7 +22,7 @@
 NDiscover (NetDiscover) es una herramienta que automatiza:
 
 #### ⭐ Descubrimiento de interfaces de redes
-#### ⭐ Descubrimiento de Direcciones privadas IPv4 e IPv6 mediante los protocolos: ARP y SCTP
+#### ⭐ Descubrimiento de Direcciones privadas IPv4 e IPv6 mediante los protocolos: ARP e ICMP
 #### ⭐ Escaneo automatico de puertos abiertos tanto IPv4 e IPv6 mediante los protocolos: TCP, UDP y SCTP junto con documentación web
 #### ⭐ Automatización de Carpetas de trabajo y servidor en Python para ver análisis de servicios vía HTML del escaneo de puertos
 
