@@ -26,6 +26,7 @@ CHECKMARK="✅"
 SERVER="🌐📡"
 EXIT="❌"
 DUDE="❓"
+DETECTIVE="🕵️"
 
 # ====================== 1: Menú de Ayuda ======================
 help_menu() {
@@ -133,7 +134,40 @@ scan_network() {
   read -r
 }
 
-# ====================== 5: Función para escanear en IPv4 ======================
+# ====================== 5: Función para detectar SO (TTL) ======================
+detect_os_by_ttl() {
+  echo -e "\n${CYAN}====================== ${DETECTIVE} Detección de Sistema Operativo por TTL ${DETECTIVE} ======================${RESET}\n"
+  
+  # Solicitar IP de la víctima
+  echo -e -n "\n${CYAN}${SCANNER} Ingresa la IP que deseas analizar (Ejemplo: 192.168.0.10): ${RESET}"
+  read ip_target
+  
+  echo -e "\n${YELLOW}Realizando ping para obtener TTL...${RESET}\n"
+  
+  # Realizar ping y capturar el TTL
+  ttl_result=$(ping -c 1 $ip_target | grep "ttl=" | awk '{print $6}' | cut -d'=' -f2)
+  
+  if [ -z "$ttl_result" ]; then
+    echo -e "${RED}${WARNING} No se pudo obtener el TTL. La IP podría estar inalcanzable.${RESET}"
+  else
+    echo -e "${GREEN}TTL obtenido: ${ttl_result}${RESET}"
+    
+    # Determinar sistema operativo basado en el TTL
+    if [ $ttl_result -le 64 ]; then
+      echo -e "${BLUE}${CHECKMARK} Sistema operativo: Linux/Unix${RESET}"
+    elif [ $ttl_result -le 128 ] && [ $ttl_result -gt 64 ]; then
+      echo -e "${MAGENTA}${CHECKMARK} Sistema operativo: Windows${RESET}"
+    else
+      echo -e "${CYAN}${CHECKMARK} Sistema operativo: Dispositivo de red${RESET}"
+    fi
+  fi
+  
+  # Recordatorio de continuar
+  echo -e "\n${YELLOW}${WARNING} El proceso ha finalizado. Presiona Enter para continuar.${RESET}"
+  read -r
+}
+
+# ====================== 6: Función para escanear en IPv4 ======================
 advanced_scan_ipv4() {
   # Solicitar IP de la víctima
   echo -e -n "\n${CYAN}${SCANNER} Ingresa la IP IPv4 que deseas escanear (Ejemplo: 192.168.0.10): ${RESET}"
@@ -173,7 +207,7 @@ advanced_scan_ipv4() {
   read -r
 }
 
-# ====================== 6: Función para escanear en IPv6 ======================
+# ====================== 7: Función para escanear en IPv6 ======================
 advanced_scan_ipv6() {
   # Solicitar IP de la víctima
   echo -e -n "\n${CYAN}${SCANNER} Ingresa la IP IPv6 que deseas escanear (Ejemplo: fe80::20c:29ff:fe43:4b01%eth0): ${RESET}"
@@ -212,7 +246,7 @@ advanced_scan_ipv6() {
   read -r
 }
 
-# ====================== 7: Función para crear directorios y servidor ======================
+# ====================== 8: Función para crear directorios y servidor ======================
 create_server() {
   # Solicitar al usuario el nombre del directorio de trabajo
   echo -e -n "\n${CYAN}Ingresa el nombre del banco de trabajo anteriormente creado (Ejemplo: Dockerlabs_Maquina_Upload): ${RESET}"
@@ -275,7 +309,7 @@ create_server() {
   esac
 }
 
-# ====================== 8: Función de salida ======================
+# ====================== 9: Función de salida ======================
 handle_exit() {
   clear
   echo -e "${CYAN}====================== ${EXIT} ¡Saliendo del programa! ${EXIT} ======================${RESET}"
@@ -299,10 +333,11 @@ main_menu() {
     echo -e "${YELLOW}2.${RESET} Instalar Dependencias ${SCANNER}"
     echo -e "${BLUE}3.${RESET} Obtener las interfaces de Red ${NETWORK}"
     echo -e "${BLUE}4.${RESET} Escanear Host (ARP, ICMP, IPv6) ${NETWORK}"
-    echo -e "${MAGENTA}5.${RESET} Nmap IPv4 (TCP, UDP, SCTP) ${COMPUTER}"
-    echo -e "${MAGENTA}6.${RESET} Nmap IPv6 (TCP, UDP, SCTP) ${COMPUTER}"
-    echo -e "${RED}7.${RESET} Extra: Crear subdirectorios adicionales y servidor en Python ${FOLDER}"
-    echo -e "${RED}8.${RESET} Salir de la herramienta ${EXIT}"
+    echo -e "${MAGENTA}5.${RESET} Detección de SO (TTL) ${DETECTIVE}"
+    echo -e "${MAGENTA}6.${RESET} Nmap IPv4 (TCP, UDP, SCTP) ${COMPUTER}"
+    echo -e "${MAGENTA}7.${RESET} Nmap IPv6 (TCP, UDP, SCTP) ${COMPUTER}"
+    echo -e "${RED}8.${RESET} Extra: Crear subdirectorios adicionales y servidor en Python ${FOLDER}"
+    echo -e "${RED}9.${RESET} Salir de la herramienta ${EXIT}"
     echo -e -n "${CYAN}Por favor seleccione una opcion: ${RESET}"
     read opcion
     case $opcion in
@@ -319,15 +354,18 @@ main_menu() {
         get_network
         ;;
       5)
-        advanced_scan_ipv4
+        detect_os_by_ttl
         ;;
       6)
-        advanced_scan_ipv6
+        advanced_scan_ipv4
         ;;
       7)
-        create_server
+        advanced_scan_ipv6
         ;;
       8)
+        create_server
+        ;;
+      9)
         handle_exit
         ;;
       *)
