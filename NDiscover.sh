@@ -115,19 +115,18 @@ scan_network() {
   echo -e "\n${CYAN}====================== ${SCANNER} Escaneando toda la red ${SCANNER} ======================${RESET}\n"
 
   # Escaneo ARP
-  echo -e "${YELLOW}=================================== ARP ${SCANNER} ===================================${RESET}\n"
+  echo -e "${YELLOW}=================================== ARP ${SCANNER} ===================================${RESET}"
   nmap -sn -PR $network | awk '/Nmap scan report/{ip=$NF} /Host is up/{printf "%s\t", ip} /MAC Address/{print $3, $4, $5, $6}'
-  echo -e "\n"
-
+  
   # Escaneo ICMP
-  echo -e "${GREEN}=================================== ICMP ${NETWORK} ===================================${RESET}\n"
+  echo -e "\n${GREEN}=================================== ICMP ${NETWORK} ===================================${RESET}"
   nmap -sn -PE $network | awk '/Nmap scan report/{ip=$NF} /Host is up/{printf "%s\t", ip} /MAC Address/{print $3, $4, $5, $6}'
-  echo -e "\n"
-
+  
   # Escaneo IPv6
-  echo -e "${MAGENTA}=================================== IPv6 ${COMPUTER} ===================================${RESET}\n"
+  echo -e "\n${MAGENTA}=================================== IPv6 ${COMPUTER} ===================================${RESET}"
   ping6 -c2 -I eth0 ff02::1
-  echo -e "\n"
+  
+  echo -e "\n${CYAN}========================= Happy Hunting :) ==========================${RESET}\n"
 
   # Recordatorio de continuar
   echo -e "\n${YELLOW}${WARNING} El proceso ha finalizado. Presiona Enter para continuar.${RESET}"
