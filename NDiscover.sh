@@ -124,7 +124,7 @@ scan_network() {
   
   # Escaneo IPv6
   echo -e "\n${MAGENTA}=================================== IPv6 ${COMPUTER} ===================================${RESET}"
-  ping6 -c2 -I eth0 ff02::1
+  nmap -6 -sL --script targets-ipv6-multicast-echo 2>/dev/null | grep "IP:" | sed 's/|   //g'
   
   echo -e "\n${CYAN}========================= Happy Hunting :) ==========================${RESET}\n"
 
