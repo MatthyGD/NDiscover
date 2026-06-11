@@ -20,6 +20,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00e6c8,100:78b4ff&height=220&section=header&text=NDiscover&fontSize=72&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=Network%20Discovery%20Toolkit%20%E2%80%94%20by%20MatthyGD&descSize=18&descAlignY=62&descColor=a0f0e0" />
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=800&color=00E6C8&center=true&vCenter=true&width=700&lines=ARP+%2B+ICMP+%2B+IPv6+Host+Discovery;Nmap+TCP+%2B+UDP+%2B+SCTP+Scanning;Auto-generated+HTML+Reports;Interactive+Menu-Driven+Interface" alt="Typing SVG" />
 </div>
+
 ---
  
 ## 🌐 ¿Qué es NDiscover?
