@@ -1,149 +1,153 @@
-# ⚠️ Precaución
+[![Stars](https://img.shields.io/github/stars/MatthyGD/NDiscover?style=for-the-badge&color=00e6c8&labelColor=0d1117&logo=github)](https://github.com/MatthyGD/NDiscover/stargazers)
+[![Last Commit](https://img.shields.io/github/last-commit/MatthyGD/NDiscover?style=for-the-badge&color=78b4ff&labelColor=0d1117&logo=git&logoColor=white)](https://github.com/MatthyGD/NDiscover/commits)
+[![Language](https://img.shields.io/badge/Shell-Bash-ff5ab4?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=0d1117)](https://github.com/MatthyGD/NDiscover)
+[![Platform](https://img.shields.io/badge/Platform-Kali%20Linux-557C94?style=for-the-badge&logo=linux&logoColor=white&labelColor=0d1117)](https://www.kali.org/)
+[![Ethics](https://img.shields.io/badge/Use-Ethical%20Only-64f082?style=for-the-badge&labelColor=0d1117)](https://github.com/MatthyGD/NDiscover)
  
-![WARNING-12-12-2024 (1)](https://github.com/user-attachments/assets/148e670a-8284-47b0-9080-e8fbd738d85b)
+---
  
-> 👮 **Usa la herramienta solo con autorización o en entornos controlados.**
-> 👮 **NDiscover está pensada únicamente para fines éticos, educativos o de investigación.**
-> 👮 **No se recomienda ni se respalda su uso en redes o sistemas sin permiso explícito.**
+## ⚠️ Precaución
  
-NDiscover realiza **escaneos de red activos** (incluyendo barridos de puertos agresivos). Lanzarlos contra redes ajenas puede ser intrusivo e ilegal. La responsabilidad recae por completo en quien ejecuta la herramienta.
+> 👮 Usa la herramienta **solo con autorización** o en entornos controlados.
+> 👮 NDiscover está pensada únicamente para **fines éticos, educativos o de investigación**.
+> 👮 No se recomienda ni se respalda su uso en redes o sistemas sin permiso explícito.
+>
+> NDiscover realiza escaneos de red activos (barridos de puertos agresivos). Lanzarlos contra redes ajenas puede ser intrusivo e ilegal. La responsabilidad recae por completo en quien ejecuta la herramienta.
  
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
  
-# 🔍️ Comienza a Auditar con NDiscover
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00e6c8,100:78b4ff&height=220&section=header&text=NDiscover&fontSize=72&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=Network%20Discovery%20Toolkit%20%E2%80%94%20by%20MatthyGD&descSize=18&descAlignY=62&descColor=a0f0e0" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=800&color=00E6C8&center=true&vCenter=true&width=700&lines=ARP+%2B+ICMP+%2B+IPv6+Host+Discovery;Nmap+TCP+%2B+UDP+%2B+SCTP+Scanning;Auto-generated+HTML+Reports;Interactive+Menu-Driven+Interface" alt="Typing SVG" />
+</div>
+---
  
-![NDISCOVER-12-12-2024 (2)](https://github.com/user-attachments/assets/28071e81-e50b-4595-b2dc-394d6518b119)
+## 🌐 ¿Qué es NDiscover?
  
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+**NDiscover** es una herramienta interactiva de reconocimiento de red que cubre todo el ciclo de descubrimiento: desde encontrar hosts activos hasta generar reportes HTML navegables de los escaneos Nmap, todo desde un único menú guiado. Diseñada para que un analista pueda ir de cero a resultados documentados sin salir del script.
  
-### 🌐 ¿Qué es NDiscover? 🌐
+⭐ Descubrimiento de hosts IPv4 e IPv6 mediante **ARP**, **ICMP** y **multicast link-local**
+⭐ Detección de fabricante por OUI (VMware, VirtualBox, QEMU/KVM, Raspberry Pi…)
+⭐ Detección del sistema operativo por **TTL**
+⭐ Escaneo de puertos vía **TCP**, **UDP** y **SCTP** con Nmap, generando **reportes HTML** navegables
+⭐ Servidor **HTTP en Python** para revisar los análisis vía web desde cualquier dispositivo
+⭐ Subnetting automático Clase C a partir de la IP privada introducida
  
-**NDiscover** (NetDiscover) es una herramienta interactiva que automatiza el reconocimiento de red de principio a fin, desde un menú claro y guiado:
- 
-#### ⭐ Descubrimiento de interfaces de red
-#### ⭐ Descubrimiento de hosts IPv4 e IPv6 mediante ARP, ICMP y multicast link-local, con **detección de fabricante** y subnetting automático (Clase C)
-#### ⭐ Detección del sistema operativo por TTL
-#### ⭐ Escaneo automático de puertos IPv4 e IPv6 vía TCP, UDP y SCTP, con **reportes HTML** navegables
-#### ⭐ Creación de bancos de trabajo y servidor HTTP en Python para revisar los análisis vía web
- 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
  
 ## ✨ Características
  
-- 🎨 **Banner con degradado truecolor** (cian → magenta) y *fallback* automático a 8 colores en terminales sin soporte de 24 bits.
-- 🧭 **Menú interactivo** con cabeceras de sección degradadas, iconos y mensajes de estado uniformes (`✔ ✖ ⚠ ➜`).
-- 🏷️ **Detección de fabricante por OUI** (VMware, VirtualBox, QEMU/KVM, Raspberry Pi…) tanto en hosts IPv4 como correlacionando los vecinos **IPv6** descubiertos.
-- 🌐 **Descubrimiento IPv6 robusto**: detecta la interfaz por defecto, hace *ping* multicast a `ff02::1` y lee la tabla de vecinos (`ip -6 neigh`), en lugar de depender de *scripts* NSE frágiles.
-- 📄 **Reportes HTML automáticos** de cada escaneo (vía `xsltproc`). Si la conversión falla, **se conserva el XML** para no perder resultados.
-- 🛡️ **Escaneo IPv6 estable**: en TCP por IPv6 se usa `-sV -O --traceroute` en lugar de `-A`, evitando el *crash* del motor NSE de Nmap (`assertion 'lua_status(L) == LUA_YIELD'`) que aparece en varias versiones.
-- 🔒 **Servidor HTTP que no rompe el flujo**: `Ctrl+C` detiene el servidor y te devuelve a la herramienta, sin matar el proceso.
-- ✅ **Validación de entradas** (formato de IP, opciones del menú) y comprobación/instalación de dependencias.
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+| | Feature | Descripción |
+|---|---|---|
+| 🎨 | Paleta truecolor | Degradado cian → magenta con fallback automático a 8 colores |
+| 🧭 | Menú interactivo | 9 opciones guiadas con cabeceras degradadas e iconos |
+| 🏷️ | Detección de fabricante | OUI lookup para IPv4 y correlación con vecinos IPv6 |
+| 🌐 | IPv6 robusto | Ping multicast `ff02::1` + lectura de tabla `ip -6 neigh` |
+| 📄 | Reportes HTML | Conversión automática XML → HTML vía `xsltproc` |
+| 🛡️ | Escaneo IPv6 estable | Evita el crash NSE de Nmap usando `-sV -O --traceroute` en IPv6 |
+| 🔒 | Servidor HTTP limpio | `Ctrl+C` detiene el servidor y devuelve al menú sin matar el proceso |
+| ✅ | Validación de entradas | Formato de IP y opciones de menú validados antes de ejecutar |
+ 
+---
+ 
+## 🔎 Opciones del menú
+ 
+| Opción | Función | Descripción |
+|---|---|---|
+| `1` | ❓ Ayuda y guía | Cómo usar NDiscover y flujo recomendado |
+| `2` | 📦 Verificar dependencias | Comprueba e instala `nmap`, `python3` y `xsltproc` |
+| `3` | 🌐 Interfaces de red | Lista todas las interfaces activas del sistema |
+| `4` | 🔍 Descubrir hosts | ARP (capa 2) + ICMP echo (capa 3) + vecinos IPv6 link-local |
+| `5` | 🕵️ Detección de SO | Inferencia del SO por TTL recibido en ping |
+| `6` | 💻 Nmap IPv4 | TCP + UDP + SCTP completos con generación de HTML por protocolo |
+| `7` | 💻 Nmap IPv6 | Igual que opción 6 pero sobre dirección IPv6 |
+| `8` | 📂 Banco + HTTP | Crea estructura de directorios e inicia servidor HTTP en Python |
+| `9` | ❌ Salir | Cierra NDiscover de forma limpia |
+ 
+---
  
 ## 📦 Requisitos
  
-NDiscover puede comprobar e instalar sus dependencias desde el propio menú (opción 2). Las principales son:
+| Herramienta | Función | Instalación |
+|---|---|---|
+| `nmap` | Motor de escaneo y descubrimiento | `apt install nmap` |
+| `python3` | Servidor HTTP del banco de trabajo | Preinstalado en Kali |
+| `xsltproc` | Generación de reportes HTML | `apt install xsltproc` |
+| `iproute2` | Interfaces y vecinos IPv6 | Preinstalado en Kali |
+| `ping` (IPv6) | Multicast link-local | Preinstalado en Kali |
  
-- `nmap` — motor de escaneo y descubrimiento
-- `python3` — servidor HTTP del banco de trabajo
-- `xsltproc` — generación de los reportes HTML
-- `iproute2` (`ip`) y `ping` con soporte IPv6 — descubrimiento de interfaces y vecinos
-> 💡 Para ver el banner con degradado a todo color usa una terminal con soporte **truecolor**. Si no, NDiscover cae automáticamente a colores básicos.
->
-> 🔑 Muchos escaneos (SYN/UDP/SCTP, detección de SO) y la creación de bancos en `/opt` requieren privilegios: ejecuta la herramienta con **sudo**.
+> 💡 NDiscover puede instalar sus dependencias automáticamente desde la **opción 2** del menú.
  
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+> 🔑 Los escaneos SYN/UDP/SCTP, detección de SO y creación de bancos en `/opt` requieren **sudo**.
+ 
+---
  
 ## 🚀 Instalación y uso
  
-🔴 Clonamos el repositorio
+🔴 Clonar el repositorio
  
 ```bash
 git clone https://github.com/MatthyGD/NDiscover.git
 ```
  
-🔴 Entramos dentro del repositorio
+🔴 Entrar en el directorio
  
 ```bash
 cd NDiscover/
 ```
  
-🔴 Garantizamos permisos de ejecución
+🔴 Garantizar permisos de ejecución
  
 ```bash
 chmod +x NDiscover.sh
 ```
  
-🔴 Desplegamos la herramienta como usuario privilegiado
+🔴 Desplegar la herramienta
  
 ```bash
 sudo ./NDiscover.sh
 ```
  
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
  
 ## 🧭 Recorrido por el menú
  
-✅ **1 → Menú de ayuda y guía de uso de la herramienta:**
+✅ **1 → Ayuda y guía de uso**
  
-![Ayuda](https://github.com/user-attachments/assets/4fe40482-ea04-4284-89f0-d2c40f6e66f8)
+Descripción del flujo recomendado: instalar dependencias → descubrir hosts → escanear con Nmap → banco de trabajo. Incluye información del autor y créditos.
  
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+✅ **2 → Verificación e instalación de dependencias**
  
-✅ **2 → Verificación e instalación automática de dependencias** (`nmap`, `python3`, `xsltproc`)**:**
+Comprueba `nmap`, `python3` y `xsltproc`. Si alguna falta, ofrece instalarla con `apt` automáticamente antes de continuar.
  
-![Herramientas2](https://github.com/user-attachments/assets/f7240853-3197-4703-947f-393e472af7b2)
+✅ **3 → Interfaces de red disponibles**
  
-![Requisitos](https://github.com/user-attachments/assets/8c2e3d37-63e0-4e02-8a10-3f6724efefa3)
+Lista todas las interfaces activas con sus IPs usando `ip -brief address` con salida en color. Útil para identificar la interfaz y red objetivo antes de lanzar el descubrimiento.
  
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+✅ **4 → Descubrimiento de hosts (ARP · ICMP · IPv6)**
  
-✅ **3 → Interfaces de red disponibles:**
+Introduce tu IP privada y NDiscover deriva la subred `/24`. Lanza tres pasadas: ARP sobre capa 2, ICMP echo sobre capa 3 y detección de vecinos IPv6 link-local. Muestra IP, MAC, fabricante detectado por OUI y acumula los resultados en un caché de sesión para correlacionar IPv4 ↔ IPv6.
  
-![Interfaces](https://github.com/user-attachments/assets/93c5e3bf-7cc8-4cfc-85d5-4c08b4d943eb)
+✅ **5 → Detección de SO por TTL**
  
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Envía un ping a la IP indicada e infiere el sistema operativo probable: `≤64` → Linux/Unix, `≤128` → Windows, `>128` → dispositivo de red.
  
-✅ **4 → Descubrimiento de hosts vía ARP, ICMP e IPv6 con subnetting automático (Clase C) y detección de fabricante:**
+✅ **6 & 7 → Escaneo de puertos IPv4 / IPv6 (TCP · UDP · SCTP)**
  
-![Hosts](https://github.com/user-attachments/assets/a3614eef-81e3-4f4d-b843-89a6a64fa3c3)
+Escaneo completo de los 65535 puertos por protocolo con Nmap a máxima velocidad (`--min-rate=5000 -T5`). Los resultados se guardan en XML y se convierten a HTML con `xsltproc` para revisar desde el navegador. En IPv6 se usa `-sV -O --traceroute` para evitar el crash del motor NSE.
  
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+✅ **8 → Banco de trabajo + servidor HTTP**
  
-✅ **5 → Detección del sistema operativo por TTL:**
+Crea en `/opt/<nombre>` una estructura de subdirectorios (`ftp`, `ssh`, `smb`, `http`, `credentials`, `exploit`…) e inicia un servidor HTTP en Python en el puerto elegido. `Ctrl+C` detiene el servidor y devuelve al menú sin interrumpir el proceso.
  
-> Envía un *ping* a la IP indicada e infiere el sistema operativo probable a partir del TTL recibido (≤64 → Linux/Unix, ≤128 → Windows, en otro caso → dispositivo de red).
->
-> _(Captura pendiente — añádela aquí cuando quieras.)_
+✅ **9 → Salir**
  
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Cierra NDiscover de forma limpia con confirmación previa.
  
-✅ **6 & 7 → Escaneo de puertos (IPv4 e IPv6) vía TCP, UDP y SCTP, con reportes HTML:**
+---
  
-![Puertos 1](https://github.com/user-attachments/assets/cd44eac4-4084-4a58-9d40-360d149e5175)
- 
-![Puertos 2](https://github.com/user-attachments/assets/92bdc3e1-a313-4105-a0ac-5a6909dc136e)
- 
-![Puertos 3](https://github.com/user-attachments/assets/dd7ffec6-99b8-4bcd-9d5a-713d079a955c)
- 
-![Puertos 4](https://github.com/user-attachments/assets/44b8b27b-1a56-4f56-94fd-aeb20b35232a)
- 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
- 
-✅ **8 → Creación del banco de trabajo + servidor HTTP en Python para revisar los análisis vía web:**
- 
-![Extra 1](https://github.com/user-attachments/assets/f09b5cc8-4174-40ef-af18-7e1bde34006f)
- 
-![Extra 2](https://github.com/user-attachments/assets/14186cd1-a482-404e-853a-b9d35f241f3e)
- 
-![Extra 3](https://github.com/user-attachments/assets/8732c927-9abb-4e8c-8845-91ae12df9bb5)
- 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
- 
-✅ **9 → Salir** de la herramienta de forma limpia.
- 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
- 
-# ❤️ ¡Hasta aquí todo!
- 
-Si NDiscover te resulta útil, ⭐ deja una estrella en el repositorio y comparte tu *feedback*. ¡Gracias por usarla!
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:78b4ff,100:0d1117&height=120&section=footer" />
+
+Desarrollado por MatthyGD (https://github.com/MatthyGD)
+</div>
